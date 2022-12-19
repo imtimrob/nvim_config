@@ -6,3 +6,9 @@ vim.g.netrw_liststyle = 3 -- Tree-style view
 --Hide 'dotfiles' Toggle hidden with 'gh'
 vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignorek
 
+vim.g.netrw_winsize = 25
+--vim.g.netrw_list_hide = "&wildignore"
+--      augroup ProjectDawer
+--          autocmd!
+--      autocmd VimEnter * :Vexplore
+--  augroup END

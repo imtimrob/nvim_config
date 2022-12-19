@@ -29,10 +29,9 @@ vim.opt.isfname:append("@-@")
 vim.opt.updatetime = 50
 
 vim.cmd("colorscheme carbonfox")
-vim.opt.colorcolumn = "80"
+--vim.opt.colorcolumn = "80"
 
 vim.g.mapleader = " "
-
 
 vim.g.user_emmet_mode = 'n'
 vim.g.user_emmet_leader_key = ','
