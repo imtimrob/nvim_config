@@ -1,4 +1,4 @@
-vim.cmd [[packadd packer.nvim]]
+rvim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function(use)
     -- Packer can manage itself
@@ -10,7 +10,7 @@ require('packer').startup(function(use)
         requires = { {'nvim-lua/plenary.nvim'} }
     }
 
-    use 'burntsushi/ripgrep'
+    use 'BurntSushi/ripgrep'
 
     use({
         'EdenEast/nightfox.nvim',

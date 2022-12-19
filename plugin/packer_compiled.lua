@@ -174,7 +174,7 @@ _G.packer_plugins = {
   ripgrep = {
     loaded = true,
     path = "/Users/timrob/.local/share/nvim/site/pack/packer/start/ripgrep",
-    url = "https://github.com/burntsushi/ripgrep"
+    url = "https://github.com/BurntSushi/ripgrep"
   },
   ["telescope.nvim"] = {
     loaded = true,
