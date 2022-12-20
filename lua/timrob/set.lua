@@ -1,32 +1,37 @@
-vim.opt.guicursor = ""
+vim.o.guicursor = ""
 
-vim.opt.nu = true
-vim.opt.relativenumber = true
+--vim.opt.nu = true
+--vim.opt.relativenumber = true
 
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
-vim.opt.expandtab = true
+vim.wo.number = true
+vim.wo.relativenumber = true
 
-vim.opt.smartindent = true
+vim.o.mouse = 'a'
 
-vim.opt.wrap = false
+vim.o.tabstop = 4
+vim.o.softtabstop = 4
+vim.o.shiftwidth = 4
+vim.o.expandtab = true
 
-vim.opt.swapfile = false
-vim.opt.backup = false
-vim.opt.undodir = os.getenv("HOME") .. "/.vim/undodir"
-vim.opt.undofile = true
+vim.o.smartindent = true
 
-vim.opt.hlsearch = false
-vim.opt.incsearch = true
+vim.o.wrap = false
 
-vim.opt.termguicolors = true
+vim.o.swapfile = false
+vim.o.backup = false
+vim.o.undodir = os.getenv("HOME") .. "/.vim/undodir"
+vim.o.undofile = true
 
-vim.opt.scrolloff = 8
-vim.opt.signcolumn = "yes"
+vim.o.hlsearch = false
+vim.o.incsearch = true
+
+vim.o.termguicolors = true
+
+vim.o.scrolloff = 8
+vim.o.signcolumn = "yes"
 vim.opt.isfname:append("@-@")
 
-vim.opt.updatetime = 50
+vim.o.updatetime = 50
 
 vim.cmd("colorscheme carbonfox")
 --vim.opt.colorcolumn = "80"
