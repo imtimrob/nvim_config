@@ -7,6 +7,7 @@ vim.wo.number = true
 vim.wo.relativenumber = true
 
 vim.o.mouse = 'a'
+vim.o.mousefocus = true
 
 vim.o.tabstop = 4
 vim.o.softtabstop = 4
@@ -35,9 +36,4 @@ vim.o.updatetime = 50
 
 vim.cmd("colorscheme carbonfox")
 --vim.opt.colorcolumn = "80"
-
-vim.g.mapleader = " "
-
-vim.g.user_emmet_mode = 'n'
-vim.g.user_emmet_leader_key = ','
 

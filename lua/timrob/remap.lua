@@ -18,7 +18,12 @@ vim.keymap.set("i", "kj", "<ESC>")
 vim.keymap.set("v", "jk", "<ESC>")
 vim.keymap.set("v", "kj", "<ESC>")
 
--- move the line below up to the end of current line
+vim.keymap.set("n", ";h", "<C-w>h")
+vim.keymap.set("n", ";j", "<C-w>j")
+vim.keymap.set("n", ";k", "<C-w>k")
+vim.keymap.set("n", ";l", "<C-w>l")
+
+-- move the linenbelow up to the end of current line
 vim.keymap.set("n", "J", "mzJ`z")
 
 -- keep stuff centered on the screen when scrolling or searching next
@@ -39,10 +44,10 @@ vim.keymap.set("n", "Q", "<nop>")
 vim.keymap.set("n", "<C-f>", "<cmd>silent !tmux neww tmux-sessionizer<CR>")
 vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
-vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
-vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
-vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
-vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
+--vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+--vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+--vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+--vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
