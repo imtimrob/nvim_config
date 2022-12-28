@@ -6,7 +6,7 @@ vim.g.user_emmet_mode = 'n'
 vim.g.user_emmet_leader_key = ','
 
 -- space + pv enters NetRW file browser
-vim.keymap.set("n", "<leader>pv", vim.cmd.Rex)
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
 -- move line up with alt+j or down with alt+k
 vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
