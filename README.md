@@ -5,16 +5,16 @@ Packer is the Plugin manager.
 
 Plugins installed include:
 
-Telescope
-Plenary
-nightfox colorscheme using carbonfox 
-Treesitter and playground
-Harpoon (toggle quickly between buffers)
-UndoTree
-Emmet-vim
-Vim-Fugitive
-LSP Zero which loads lots of stuff.
-ripgrep
+- Telescope
+- Plenary
+- nightfox colorscheme using carbonfox 
+- Treesitter and playground
+- Harpoon (toggle quickly between buffers)
+- UndoTree
+- Emmet-vim
+- Vim-Fugitive
+- LSP Zero which loads lots of stuff.
+- ripgrep
 
 NetRW customizations:
 
