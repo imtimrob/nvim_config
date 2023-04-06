@@ -32,6 +32,12 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+--Change in Tags creates a line within a Tag
+vim.keymap.set("n", "cit", "cit<return><ESC><S-O>")
+vim.keymap.set("i", "{", "{<return>}<ESC><S-O>")
+vim.keymap.set("i", "\"", "\"\"<ESC>i")
+vim.keymap.set("i", "(", "()<ESC>i")
+
 -- Paste over a word without changing buffer
 vim.keymap.set("x", "<leader>p", "\"_dP")
 
