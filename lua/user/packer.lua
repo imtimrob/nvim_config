@@ -80,7 +80,7 @@ return packer.startup(function(use)
 	use('tpope/vim-fugitive')
 	use('mattn/emmet-vim')
 	use 'BurntSushi/ripgrep'
-	use { "kyazdani42/nvim-tree.lua"}
+	use { "nvim-tree/nvim-tree.lua"}
 	use {
 		'nvim-lualine/lualine.nvim',
 		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
