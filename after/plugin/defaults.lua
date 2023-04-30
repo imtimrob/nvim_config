@@ -9,8 +9,3 @@ vim.g.netrw_liststyle = 0 -- Tree-style view
 vim.g.netrw_list_hide = (vim.fn["netrw_gitignore#Hide"]()) .. [[,\(^\|\s\s\)\zs\.\S\+]] -- use .gitignore
 
 vim.g.netrw_winsize = 20
---vim.g.netrw_list_hide = "&wildignore"
---      augroup ProjectDawer
---          autocmd!
---      autocmd VimEnter * :Vexplore
---  augroup END

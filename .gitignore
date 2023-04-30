@@ -1,0 +1,5 @@
+.DS_Store
+<<<<<<< HEAD
+=======
+packer_compiled.lua
+>>>>>>> 7c58e3a (add gitignore file to stop syncing .DS_Store and packer compile)
