@@ -15,14 +15,15 @@ vim.g.user_emmet_leader_key = ','
 vim.keymap.set("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- move line up with alt+j or down with alt+k
-vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
-vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv")
+vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv", opts)
+vim.keymap.set("v", "˚", ":m '<-2<CR>gv=gv", opts)
+vim.keymap.set("v", "p", '"_dP', opts)
 
 -- type jk or kj in insert or visual modes to Escape to normal
-vim.keymap.set("i", "jk", "<ESC>")
-vim.keymap.set("i", "kj", "<ESC>")
-vim.keymap.set("v", "jk", "<ESC>")
-vim.keymap.set("v", "kj", "<ESC>")
+vim.keymap.set("i", "jk", "<ESC>", opts)
+vim.keymap.set("i", "kj", "<ESC>", opts)
+vim.keymap.set("v", "jk", "<ESC>", opts)
+vim.keymap.set("v", "kj", "<ESC>", opts)
 
 -- Better Window Navigation
 vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
