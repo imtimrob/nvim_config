@@ -81,12 +81,13 @@ return packer.startup(function(use)
 	use('mattn/emmet-vim')
 	use 'BurntSushi/ripgrep'
 	use {
-	      'nvim-lualine/lualine.nvim',
-	      requires = { 'nvim-tree/nvim-web-devicons', opt = true }
+		'nvim-lualine/lualine.nvim',
+		requires = { 'nvim-tree/nvim-web-devicons', opt = true }
 	}
+	use { "kyazdani42/nvim-tree.lua"}
 	use 'lukas-reineke/indent-blankline.nvim' -- Add indentation guides even on blank lines
-	use 'numToStr/Comment.nvim'               -- "gc" to comment visual regions/lines
-	use 'tpope/vim-sleuth'                    -- Detect tabstop and shiftwidth automatically
+	use 'numToStr/Comment.nvim'        -- "gc" to comment visual regions/lines
+	use 'tpope/vim-sleuth'             -- Detect tabstop and shiftwidth automatically
 
 
 	use {
@@ -116,4 +117,9 @@ return packer.startup(function(use)
 
 		}
 	}
+	-- Automatically set up your configuration after cloning packer.nvim
+	-- Put this at the end after all plugins
+	if PACKER_BOOTSTRAP then
+		require("packer").sync()
+	end
 end)
