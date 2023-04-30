@@ -1,18 +1,18 @@
-local opts = { noremap = true, silent = true}
---local keymap = vim.api.nvim_set_keymap
+local opts = { noremap = true, silent = true }
+--local keymap = { vim.api.nvim_set_keymap }
 
--- space is leader key 
+-- space is leader key
 vim.keymap.set("", "<Space>", "<Nop>", opts)
 vim.g.mapleader = " "
 vim.g.maplocalleader = ' '
 
--- Emmet shortcuts leader key 
+-- Emmet shortcuts leader key
 vim.g.user_emmet_mode = 'n'
 vim.g.user_emmet_leader_key = ','
 
 -- space + pv enters NetRW file browser
 --vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
-vim.keymap.set("n", "<leader>e", ":Lex 30<cr>")
+vim.keymap.set("n", "<leader>e", ":Lex 30<cr>", opts)
 
 -- move line up with alt+j or down with alt+k
 vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
@@ -23,11 +23,23 @@ vim.keymap.set("i", "jk", "<ESC>")
 vim.keymap.set("i", "kj", "<ESC>")
 vim.keymap.set("v", "jk", "<ESC>")
 vim.keymap.set("v", "kj", "<ESC>")
+
 -- Better Window Navigation
-vim.keymap.set("n", "<C-h>", "<C-w>h")
-vim.keymap.set("n", "<C-j>", "<C-w>j")
-vim.keymap.set("n", "<C-k>", "<C-w>k")
-vim.keymap.set("n", "<C-l>", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h", opts)
+vim.keymap.set("n", "<C-j>", "<C-w>j", opts)
+vim.keymap.set("n", "<C-k>", "<C-w>k", opts)
+vim.keymap.set("n", "<C-l>", "<C-w>l", opts)
+
+--Resize with arrow keys
+vim.keymap.set("n", "<C-Up>", ":resize -2<CR>", opts)
+vim.keymap.set("n", "<C-Down>", ":resize +2<CR>", opts)
+vim.keymap.set("n", "<C-Left>",  ":vertical resize -2<CR>", opts)
+vim.keymap.set("n", "<C-Right>", ":vertical resize +2<CR>", opts)
+
+-- Navigate buffers
+vim.keymap.set("n", "<S-l>", ":bnext<CR>", opts)
+vim.keymap.set("n", "<S-l>", ":bprevious<CR>", opts)
+
 
 -- move the linenbelow up to the end of current line
 vim.keymap.set("n", "J", "mzJ`z")
@@ -57,4 +69,3 @@ vim.keymap.set("n", "<leader>f", vim.lsp.buf.format)
 
 vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
 vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
-
