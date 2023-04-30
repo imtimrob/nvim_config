@@ -36,4 +36,3 @@ vim.o.updatetime = 50
 
 vim.cmd("colorscheme carbonfox")
 --vim.opt.colorcolumn = "80"
-

@@ -6,7 +6,7 @@ vim.g.user_emmet_mode = 'n'
 vim.g.user_emmet_leader_key = ','
 
 -- space + pv enters NetRW file browser
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex)
+vim.keymap.set("n", "<leader>e", ":Lex 32<cr>")
 
 -- move line up with alt+j or down with alt+k
 vim.keymap.set("v", "∆", ":m '>+1<CR>gv=gv")
@@ -18,10 +18,10 @@ vim.keymap.set("i", "kj", "<ESC>")
 vim.keymap.set("v", "jk", "<ESC>")
 vim.keymap.set("v", "kj", "<ESC>")
 
-vim.keymap.set("n", ";h", "<C-w>h")
-vim.keymap.set("n", ";j", "<C-w>j")
-vim.keymap.set("n", ";k", "<C-w>k")
-vim.keymap.set("n", ";l", "<C-w>l")
+vim.keymap.set("n", "<C-h>", "<C-w>h")
+vim.keymap.set("n", "<C-j>", "<C-w>j")
+vim.keymap.set("n", "<C-k>", "<C-w>k")
+vim.keymap.set("n", "<C-l>", "<C-w>l")
 
 -- move the linenbelow up to the end of current line
 vim.keymap.set("n", "J", "mzJ`z")
