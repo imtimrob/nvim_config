@@ -3,6 +3,13 @@
 --vim.g.loaded_netrwPlugin = 1
 -- Better Netrw
 vim.g.netrw_banner = 0 -- Hide banner
+<<<<<<< HEAD
+=======
+vim.g.netrw_winsize = -28
+vim.g.netrw_browse_split = 4
+vim.g.netrw_preview = 1
+vim.g.netrw_altv = 1 -- Open with right splitting
+>>>>>>> b624e2f (Changed defaults.lua for better Netrw)
 vim.g.netrw_liststyle = 3 -- Tree-style view
 vim.g.netrw_browse_split = 4
 vim.g.netrw_altv = 1 -- Open with right splitting
